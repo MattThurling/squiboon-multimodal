@@ -1,0 +1,82 @@
+@import './base.css';
+
+.fullscreen-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.centralise {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.title {
+  margin-top: 5vh;
+  flex: 1;
+}
+
+.recognition {
+  flex: 1;
+}
+
+.help {
+  flex: 1;
+}
+
+.voice-select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+
+.question {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5vw;
+  font-size: 4vw;
+  line-height: 1.2;
+}
+
+.picture-box {
+  flex: 1;
+  height: 100%;
+}
+
+.picture {
+  height: 100%;
+}
+
+#voices {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #282828;
+  color: white;
+  height: 30px;
+}
+
+.pointy {
+  cursor: pointer;
+}
+
+.live {
+  color: #991b1b;
+}
+
+.gofull {
+  position: absolute;
+  bottom: 1vh;
+  right: 1vw;
+}
+
