@@ -135,7 +135,7 @@
         }
       },
       async getCompletion(input) {
-        const response = await fetch("/api/completion", {
+        const response = await fetch(import.meta.env.VITE_COMPLETION_URL, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -152,7 +152,7 @@
         if (this.page == 4) this.speak(this.question)
       },
       async getImage(input) {
-        const response = await fetch("/api/dalle", {
+        const response = await fetch(import.meta.env.VITE_DALLE_URL, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

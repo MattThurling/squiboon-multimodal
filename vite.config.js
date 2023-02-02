@@ -1,7 +1,6 @@
 import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'vite'
-import mix from 'vite-plugin-mix'
 import vue from '@vitejs/plugin-vue'
 
 
@@ -9,9 +8,6 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [
     vue(),
-    mix({
-      handler: './api.js',
-    })
   ],
   resolve: {
     alias: {

@@ -10,6 +10,7 @@
   "dependencies": {
     "@jamescoyle/vue-icon": "^0.1.2",
     "@mdi/js": "^7.1.96",
+    "axios": "^1.2.4",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "openai": "^3.1.0",
@@ -19,7 +20,6 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
-    "vite": "^4.0.0",
-    "vite-plugin-mix": "^0.4.0"
+    "vite": "^4.0.0"
   }
 }

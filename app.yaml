@@ -1,0 +1,14 @@
+runtime: nodejs16
+handlers:
+  # Serve all static files with urls ending with a file extension
+- url: /(.*\..+)$ 
+  static_files: dist/\1
+  upload: dist/(.*\..+)$
+  # catch all handler to index.html
+- url: /.*
+  static_files: dist/index.html
+  upload: dist/index.html
+
+env_variables:
+  VITE_COMPLETION_URL: "https://squiboon-completion-yfx4s2opqa-lz.a.run.app"
+  VITE_DALLE_URL: "https://squiboon-dalle-yfx4s2opqa-lz.a.run.app"
